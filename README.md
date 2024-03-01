@@ -40,6 +40,6 @@ We then can assign the input data x to the class k ∈ K with the largest poster
 Given all the instructions above, we can try on a dataset called MNIST, which has D = 784 dimensions. We want to do a projection to D′ = 2 or D′ = 3.
 
 We have Implemented the following to demonstrate FDA: 
-•	Implement the FLD for high-dimension to low-dimension projection with multivariant Gaussian.
-•	Split the MNIST dataset into training and testing. And report the accuracy on test set with D = 2 and D′ = 3.
-•	Make two plots for your testing data with a 2D and 3D plots. You can use different colors on the data points to indicate different classes. See if your results make sense to you or not.
+-> Implement the FLD for high-dimension to low-dimension projection with multivariant Gaussian.
+-> Split the MNIST dataset into training and testing. And report the accuracy on test set with D = 2 and D′ = 3.
+-> Make two plots for your testing data with a 2D and 3D plots. You can use different colors on the data points to indicate different classes. See if your results make sense to you or not.
