@@ -10,6 +10,9 @@ If we want to project the data into D′ = 1 dimension, we can pick a threshold 
 In figure below, the original data with D = 2 and we want to reduce the original data dimensions from D = 2 to D′ = 1. First we can compute the mean 
 vectors of the two classes and consider using the class means as a measure of separation. In other words, we want to project the data onto the vector w joining the 2 class means.
 
+![image](https://github.com/koushik16/Fisher-Linear-Discriminent-for-Dimentionality-Reduction/assets/63333977/f932cdd7-91fa-4409-90f8-9be38d2d3d79)
+
+
 Note that during such projection,  there can be information loss.  In our case,  clearly in the original space, the two classes can be seperated by a line. However, after projection, the yellow ellipse 
 demonstrates over- lapping of the two classes. For FLD, it looks for a large variance among the dataset classes and a smallvariance within each of the dataset classes.  The project w  could be:  w ∝ Sw−1(m2 − m1) and please refer to our slides for the meaning of each symbol and index here.
 
