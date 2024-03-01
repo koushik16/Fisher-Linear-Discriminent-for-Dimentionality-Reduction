@@ -11,7 +11,7 @@ In figure below, the original data with D = 2 and we want to reduce the original
 vectors of the two classes and consider using the class means as a measure of separation. In other words, we want to project the data onto the vector w joining the 2 class means.
 
 ![image](https://github.com/koushik16/Fisher-Linear-Discriminent-for-Dimentionality-Reduction/assets/63333977/f932cdd7-91fa-4409-90f8-9be38d2d3d79)
-/nFigure: FLD projection
+
 
 
 Note that during such projection,  there can be information loss.  In our case,  clearly in the original space, the two classes can be seperated by a line. However, after projection, the yellow ellipse 
@@ -27,6 +27,7 @@ w = maxD′ (eig(S−1SB)) - (1)
 For between-class covariance SB estimation, for each class k = 1, 2, 3, ..., K, take the outer product of the local class mean mk and the global mean m, and then scale it by the number of instances in class k.
 
 The maximization of the criterion of FLD, we need to solve w with an eigendecomposition of the matrix multiplication between S−1 and SB. To find the projection vector w, we then need to take the D′ eigen- vectors that correspond to their largest eigenvalues. 
+
 For example, if we want to reduce our input dimension from D = 784 to D′ = 2. Now we have all the necessary settings for building a FLD for multiple classes. To create a discriminant, we first can use a multivariate Gaussian distribution over a D-dimensional input vector x for each class K as:
 N(x|µ, Σ) =	1/(2π)D/2 * |Σ|^1/2   exp− 1/2 (x − µ)T Σ−1(x − µ) - (2)
  
@@ -40,6 +41,9 @@ We then can assign the input data x to the class k ∈ K with the largest poster
 Given all the instructions above, we can try on a dataset called MNIST, which has D = 784 dimensions. We want to do a projection to D′ = 2 or D′ = 3.
 
 We have Implemented the following to demonstrate FDA: 
+
 -> Implement the FLD for high-dimension to low-dimension projection with multivariant Gaussian.
+
 -> Split the MNIST dataset into training and testing. And report the accuracy on test set with D = 2 and D′ = 3.
+
 -> Make two plots for your testing data with a 2D and 3D plots. You can use different colors on the data points to indicate different classes. See if your results make sense to you or not.
