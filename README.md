@@ -11,6 +11,7 @@ In figure below, the original data with D = 2 and we want to reduce the original
 vectors of the two classes and consider using the class means as a measure of separation. In other words, we want to project the data onto the vector w joining the 2 class means.
 
 ![image](https://github.com/koushik16/Fisher-Linear-Discriminent-for-Dimentionality-Reduction/assets/63333977/f932cdd7-91fa-4409-90f8-9be38d2d3d79)
+Figure: FLD projection
 
 
 Note that during such projection,  there can be information loss.  In our case,  clearly in the original space, the two classes can be seperated by a line. However, after projection, the yellow ellipse 
