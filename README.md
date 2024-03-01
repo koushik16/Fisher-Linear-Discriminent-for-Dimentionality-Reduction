@@ -3,8 +3,8 @@ We will first recap the simplest case, K = 2. In general, we can take any D-dime
 Here, D represents the original input dimensions while D′ is the projected space dimensions. For our purpose, consider D′ less than D.
 
 If we want to project the data into D′ = 1 dimension, we can pick a threshold t to separate the classes in the new space. Given an input vector x:
-•	x belongs to class C1 (class 1), if predicted y >= t, where y = wT x
-•	otherwise, it is classified as C2 (class 2).
+->x belongs to class C1 (class 1), if predicted y >= t, where y = wT x
+->otherwise, it is classified as C2 (class 2).
 
 In figure below, the original data with D = 2 and we want to reduce the original data dimensions from D = 2 to D′ = 1. First we can compute the mean 
 vectors of the two classes and consider using the class means as a measure of separation. In other words, we want to project the data onto the vector w joining the 2 class means.
